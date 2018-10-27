@@ -1,14 +1,14 @@
 # A Beginner's Guide to Learning Web Development
 
 Online content designed to enable and encourage self-sufficiency, participation, and collaboration.
-  
+
 ## About
 
 The goal for the beginner's guide is to create materials that encourage people to learn and build amazing things. Only when we give everyone the tools to learn and create will the web be diverse and bias free. With this guide, I hope to create an inclusive environment where those interested in developing their programming skills can learn in a safe, open space, while providing the same mentorship style that SparkBox and GDI have offered me.
 
 ### Topics
 This guide includes the following topics: Git & GitHub, Dotfiles, HTML & CSS, Javascript, Accessibility, WordPress
-  
+
 ## Contribute
 
 ### Project Setup
@@ -32,19 +32,21 @@ This guide includes the following topics: Git & GitHub, Dotfiles, HTML & CSS, Ja
             - All of the handlebars files are located in the `templates` folder. Handlebars is a templating language that makes it easier to maintain static sites, especially when there are instances of repetitive markup, such as a header or footer that is used on every page.
                 - `layouts` contains a file that sets the layout for all of the pages.
                 - `pages` is where all of the pages live before they are compiled into `html` files. Each page must contain the following code at the beginning of the file:
-                    ```---
+                    ```
+                    ---
                     layoutFile: default
                     dataFile: common/*
-                    ---```
-                    
+                    ---
+                    ```
+
                     - The `layoutFile` references the file in the `layout` folder, which sets the html, head, and body tag.
-                    - The `dataFile` references the directory that data will be pulled into the file when it's compiled. 
-          
+                    - The `dataFile` references the directory that data will be pulled into the file when it's compiled.
+
           		- `partials` is where the different pieces of the page live. These partials can be reused across the site with different data being introduced for each instance.
                   - `blog` contains all of the blog posts for the TIL page. These handlebar files will use the markdown helper so posts can be written using markdown
 
 ### Hosting
-This project is hosted through GitHub pages from the `gh-pages` branch. Once a PR is approved, it will be merged into master. Then those changes will be deployed to the `gh-pages` branch. 
+This project is hosted through GitHub pages from the `gh-pages` branch. Once a PR is approved, it will be merged into master. Then those changes will be deployed to the `gh-pages` branch.
 
 ### Contribute
 
@@ -58,13 +60,13 @@ This project is hosted through GitHub pages from the `gh-pages` branch. Once a P
 2. Make changes and push them up with a commit following [this style](https://github.com/sparkbox/standard/tree/master/code-style/git#the-art-of-the-commit-message).
 	- `git commit -m 'type of changes: descripe changes`
 	- i.e `git commit -m 'fix: adds a11y attribute to links'`
-3. Navigate to this repository. 
+3. Navigate to this repository.
 4. Open a PR with your branch compared to this repo's master branch
 5. Let a collaborator take your PR and review it
-6. Keep an eye out for any feedback or comments 
+6. Keep an eye out for any feedback or comments
 7. Once approved and no more changes are needed
    - [Sync your forked repo](https://gist.github.com/corinneling/c027da69442ea08c5e67e71f72afe3c8) with this repo's master branch
-   - Have your reviewer merge your branch into master with fast forward only 
+   - Have your reviewer merge your branch into master with fast forward only
    - They will push up the updated master branch
 
 **Claiming an Issue**
